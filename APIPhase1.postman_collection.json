@@ -1,0 +1,63 @@
+{
+  "info": {
+    "_postman_id": "b8790824-16b6-4aa8-b74f-aad7879e6ae0",
+    "name": "APIPhase1",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "40021533"
+  },
+  "item": [
+    {
+      "name": "GetPosts",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\n    \"title\": \"Sapiens\",\n    \"author\": \"Yuval Noah Harari\",\n    \"published\": 2011\n}, {\n    \"title\": \"Moneyball\",\n    \"author\": \"Michael Lewis\",\n    \"published\": 2010\n}, {\n    \"title\": \"Women & Power\",\n    \"author\": \"Mary Beard\",\n    \"published\": 2017\n}]",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/posts",
+          "protocol": "https",
+          "host": [
+            "jsonplaceholder",
+            "typicode",
+            "com"
+          ],
+          "path": [
+            "posts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetSinglePost",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/posts/1",
+          "protocol": "https",
+          "host": [
+            "jsonplaceholder",
+            "typicode",
+            "com"
+          ],
+          "path": [
+            "posts",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
